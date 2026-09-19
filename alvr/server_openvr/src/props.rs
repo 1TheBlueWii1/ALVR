@@ -593,7 +593,7 @@ pub extern "C" fn set_device_openvr_props(instance_ptr: *mut c_void, device_id: 
                     // vr_properties->SetStringProperty(this->prop_container,
                     //                                  vr::Prop_Firmware_ProgrammingTargetString,
                     //                                  GetSerialNumber().c_str());
-                    set_prop(FirmwareForceUpdateRequiredBool, device_serial);
+                    set_prop(FirmwareForceUpdateRequiredBool, "false");
                     set_prop(FirmwareRemindUpdateBool, "false");
                     set_prop(HasDisplayComponentBool, "false");
                     set_prop(HasCameraComponentBool, "false");
